@@ -1,0 +1,24 @@
+<a href="/dashboard" class="go-back"> &larr; Back to dashboard</a> <!-- Navigation link to go back to the dashboard, using an arrow symbol -->
+
+<article class="new-page"> <!-- Semantic HTML element representing a self-contained composition in the webpage -->
+    <section class="new-form-page"> <!-- Section in the page, usually groups content with a common theme -->
+        <div class="form-heading"> <!-- Div for the form heading -->
+            <h2>Create New Blog Post</h2> <!-- Heading of the form -->
+        </div>
+        <div class="form-section"> <!-- Div for the form section -->
+            <form class="new-post-form"> <!-- Form for creating new blog posts -->
+                <div class="post-title-section"> <!-- Div for the post title section -->
+                    <label for="post-title">Title</label> <!-- Label for the post title input field -->
+                    <input type="text" id="post-title" name="post-title" /> <!-- Text input field for the post title -->
+                </div>
+                <div class="post-content"> <!-- Div for the post content section -->
+                    <label for="post-content">Content</label> <!-- Label for the post content input field -->
+                    <textarea class="entry-field" id="post-content" name="post-content"></textarea> <!-- Textarea input field for the post content -->
+                </div>
+                <button type="submit" class="btn">Create</button> <!-- Button to submit the form, creating a new blog post -->
+            </form>
+        </div>
+    </section>
+</article>
+
+<script src="/javascript/add-post.js"></script> <!-- Links to a JavaScript file that handles the creation of a new blog post -->

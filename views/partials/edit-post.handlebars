@@ -1,0 +1,30 @@
+<a href="/dashboard" class="go-back"> &larr; Back to dashboard</a> <!-- Navigation link to go back to the dashboard, using an arrow symbol -->
+
+<article class="new-page"> <!-- Semantic HTML element representing a self-contained composition in the webpage -->
+    <section class="edit-form-page"> <!-- Section in the page, usually groups content with a common theme -->
+        <div class="form-heading"> <!-- Div for the form heading -->
+            <h2>
+                Edit Post
+            </h2> <!-- Heading of the form -->
+        </div>
+        <div class="form-section"> <!-- Div for the form section -->
+            <form class="edit-post-form"> <!-- Form for editing an existing blog post -->
+                <div class="post-title-section"> <!-- Div for the post title section -->
+                    <label for="post-title">Title</label> <!-- Label for the post title input field -->
+                    <input type="text" name="post-title" id="post-title" value="{{post.title}}" /> <!-- Text input field for the post title, the value is dynamically set to the post's title -->
+                </div>
+                <div class="post-content"> <!-- Div for the post content section -->
+                    <label for="post-content">Content</label> <!-- Label for the post content input field -->
+                    <textarea class="entry-field" id="post-content" name="post-content">{{post.content}}</textarea> <!-- Textarea input field for the post content, the value is dynamically set to the post's content -->
+                </div>
+                <button type="submit">Update post</button> <!-- Button to submit the form, updating the existing blog post -->
+                <button type="button" class="delete-post-btn">Delete post</button> <!-- Button to delete the existing blog post -->
+            </form>
+        </div>
+    </section>
+</article>
+
+{{#if loggedIn}} <!-- If the user is logged in -->
+<script src="/javascript/edit-post.js"></script> <!-- Link to a JavaScript file that handles the update of an existing blog post -->
+<script src="/javascript/delete-post.js"></script> <!-- Link to a JavaScript file that handles the deletion of an existing blog post -->
+{{/if}} <!-- End of if condition -->

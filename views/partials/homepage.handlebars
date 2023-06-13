@@ -1,0 +1,7 @@
+<ul class="post-list"> <!-- Unordered list to contain the posts -->
+    {{#each posts as |post|}} <!-- For each post (using Handlebars.js for loop) -->
+    <li> <!-- List item for each post -->
+        {{> post-info post }} <!-- Render 'post-info' partial with the current post data -->
+    </li>
+    {{/each}} <!-- End of for each loop -->
+</ul> <!-- End of the list -->
