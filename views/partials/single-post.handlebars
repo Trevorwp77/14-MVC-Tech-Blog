@@ -1,0 +1,23 @@
+<a href="/dashboard" class="go-back"> &larr; Back to dashboard</a> <!-- Navigation link to go back to the dashboard, using an arrow symbol -->
+<br> <!-- Line break -->
+<br> <!-- Line break -->
+
+{{> post-info post}} <!-- Render 'post-info' partial with the current post data -->
+
+{{#if loggedIn}} <!-- If the user is logged in -->
+<form class="comment-form"> <!-- Form for adding a comment to the post -->
+    <div>
+        <textarea name="comment-body"></textarea> <!-- Textarea input field for the comment's body -->
+    </div>
+
+    <div>
+        <button type="submit">add comment</button> <!-- Button to submit the form, adding a new comment -->
+    </div>
+</form>
+{{/if}} <!-- End of if condition -->
+
+{{> comments post.comments}} <!-- Render 'comments' partial with the current post's comments as the data -->
+
+{{#if loggedIn}} <!-- If the user is logged in -->
+<script src="/javascript/comment.js"></script> <!-- Link to a JavaScript file that handles the adding of a new comment -->
+{{/if}} <!-- End of if condition -->

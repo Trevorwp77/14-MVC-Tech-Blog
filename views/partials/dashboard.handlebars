@@ -1,0 +1,19 @@
+<section class="new-post-section"> <!-- New post section -->
+    <button type="submit" class="btn" id="create-new-post">+ Create new post</button> <!-- Button to submit a new post -->
+</section>
+
+{{#if posts.length}} <!-- If there are posts (using Handlebars.js for conditional rendering) -->
+<section> <!-- Start of the section containing the posts -->
+    <h2>Your Dashboard</h2> <!-- Heading of the dashboard -->
+    <ul class="post-list"> <!-- Unordered list to contain the posts -->
+        {{#each posts as |post|}} <!-- For each post (using Handlebars.js for loop) -->
+        <li> <!-- List item for each post -->
+            {{> post-info post}} <!-- Render 'post-info' partial with the current post data -->
+            <a href="/dashboard/edit/{{post.id}}" class="edit-link">edit post</a> <!-- Edit post link. The href attribute is dynamically set to the current post's id -->
+        </li>
+        {{/each}} <!-- End of for each loop -->
+    </ul>
+</section> <!-- End of the section containing the posts -->
+{{/if}} <!-- End of if condition -->
+
+<script src="/javascript/create-post.js"></script> <!-- Links to a JavaScript file that handles the creation of a new post -->
