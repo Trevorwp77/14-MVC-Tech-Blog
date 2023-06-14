@@ -1,5 +1,5 @@
 <section class="new-post-section"> <!-- New post section -->
-    <button type="submit" class="btn" id="create-new-post">+ Create new post</button> <!-- Button to submit a new post -->
+    <button type="submit" class="btn" id="create-new-post">+ Create New</button> <!-- Button to submit a new post -->
 </section>
 
 {{#if posts.length}} <!-- If there are posts (using Handlebars.js for conditional rendering) -->
@@ -9,7 +9,7 @@
         {{#each posts as |post|}} <!-- For each post (using Handlebars.js for loop) -->
         <li> <!-- List item for each post -->
             {{> post-info post}} <!-- Render 'post-info' partial with the current post data -->
-            <a href="/dashboard/edit/{{post.id}}" class="edit-link">edit post</a> <!-- Edit post link. The href attribute is dynamically set to the current post's id -->
+            <a href="/dashboard/edit/{{post.id}}" class="edit-link">Edit Post</a> <!-- Edit post link. The href attribute is dynamically set to the current post's id -->
         </li>
         {{/each}} <!-- End of for each loop -->
     </ul>
