@@ -4,7 +4,7 @@
 <head> <!-- Contains meta-information about the HTML document -->
     <meta charset="UTF-8"> <!-- Specifies the character encoding for the HTML document -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Makes the webpage responsive to various screen sizes -->
-    <title>The Tech Blog</title> <!-- Title of the webpage. This is displayed in the title bar of the browser -->
+    <title>Trevor's Tech Blog</title> <!-- Title of the webpage. This is displayed in the title bar of the browser -->
     <link rel="stylesheet" href="/stylesheets/style.css"> <!-- Links the CSS file that styles this HTML page -->
 </head>
 
@@ -12,20 +12,20 @@
     <div class="wrapper"> <!-- Wraps the entire webpage content -->
         <header> <!-- Contains the header section of the webpage -->
             <h1>
-                <a href="/">home</a> <!-- Navigation link to the homepage -->
+                <a href="/">Home</a> <!-- Navigation link to the homepage -->
             </h1>
             <nav> <!-- Navigation bar -->
                 {{#if loggedIn}} <!-- Checks if the user is logged in -->
-                <a href="/dashboard">dashboard</a> <!-- If logged in, provides a navigation link to the dashboard -->
-                <button id="logout" class="btn-no-style logout">logout</button> <!-- If logged in, provides a logout button -->
+                <a href="/dashboard">Dashboard</a> <!-- If logged in, provides a navigation link to the dashboard -->
+                <button id="logout" class="btn-no-style logout">Logout</button> <!-- If logged in, provides a logout button -->
                 {{else}}
-                <a href="/login">login</a> <!-- If not logged in, provides a navigation link to the login page -->
+                <a href="/login">Login</a> <!-- If not logged in, provides a navigation link to the login page -->
                 {{/if}}
             </nav>
         </header>
         <div class="site-row"> <!-- Creates a new row on the site -->
             <div class="site-name">
-                <h1>The Tech Blog</h1> <!-- Display the site name -->
+                <h1>Trevor's Tech Blog</h1> <!-- Display the site name -->
             </div>
         </div>
         <main> <!-- Main content of the webpage -->
