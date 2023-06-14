@@ -1,0 +1,29 @@
+<!-- This 'div' serves as a container for all comments -->
+<div class="comments">
+
+    <!-- The '#each' statement from Handlebars is used to iterate over an array of comments -->
+    <!-- For each comment in the array, the HTML inside this block will be rendered -->
+    {{#each this}}
+
+    <!-- Each comment is wrapped in a 'section' tag with a class of 'comment' for styling -->
+    <section class="comment">
+    
+        <!-- The 'meta' div contains the comment's author (user's username) and the date it was created -->
+        <div class="meta">
+            <!-- 'user.username' accesses the username of the user who made the comment -->
+            <!-- 'created_at' is the time at which the comment was created -->
+            {{user.username}} on {{created_at}}
+        </div>
+        
+        <!-- The 'text' div contains the actual text of the comment -->
+        <div class="text">
+            <!-- 'comment_text' is the text content of the comment -->
+            {{comment_text}}
+        </div>
+        
+    </section>
+
+    <!-- End of the '#each' loop -->
+    {{/each}}
+    
+</div>

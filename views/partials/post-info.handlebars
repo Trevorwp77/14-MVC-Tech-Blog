@@ -1,0 +1,36 @@
+<!-- This 'article' serves as a container for each post, styled with the class 'post' -->
+<article class="post">
+
+    <!-- 'whole-post' div wraps all elements related to a single post -->
+    <div class="whole-post">
+    
+        <!-- 'info-section' contains the post title and author information -->
+        <div class="info-section">
+        
+            <!-- 'post-name' div contains a link to the post's detail page -->
+            <div class="post-name">
+                <!-- 'id' is used to create a unique link to the detail page for this post -->
+                <!-- 'title' is the title of the post -->
+                <a href="/post/{{id}}" class="links">{{title}}</a>
+            </div>
+            
+            <!-- 'created-by' contains information about the post's author and creation time -->
+            <div class="created-by">
+                <p id="comment-subtitle">
+                    <!-- 'user.username' is the username of the post's author -->
+                    <!-- 'formatDate created_at' is a Handlebars helper function to format the timestamp -->
+                    Posted by <b>{{user.username}} </b> on <b>{{formatDate created_at}}</b>
+                </p>
+            </div>
+            
+        </div>
+        
+        <!-- 'content-section' contains the actual content of the post -->
+        <div class="content-section">
+            <!-- 'content' is the body text of the post -->
+            <p>{{content}}</p>
+        </div>
+        
+    </div>
+    
+</article>
