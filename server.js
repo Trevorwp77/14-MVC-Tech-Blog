@@ -26,7 +26,7 @@ const sess = {
 
 // Create express application
 const app = express();
-const PORT = process.env.PORT || 3001; // Listen on environment defined port or default to 3001
+const PORT = process.env.PORT || 8080; // Listen on environment defined port or default to 3001
 
 // Set handlebars as the view engine
 app.engine('handlebars', hbs.engine);
