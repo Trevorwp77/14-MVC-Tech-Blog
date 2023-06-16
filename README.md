@@ -10,7 +10,7 @@
   - [Contact Me](#contact-me)
   
 ## Description
-a dynamic and user-friendly Content Management System (CMS) style blog site that allows users to create, read, update, and delete blog posts in a simple and intuitive manner. This application not only facilitates users to share their thoughts in the form of blog posts but also encourages interaction via a commenting feature.
+A dynamic and user-friendly Content Management System (CMS) style blog site that allows users to create, read, update, and delete blog posts in a simple and intuitive manner. This application not only facilitates users to share their thoughts in the form of blog posts but also encourages interaction via a commenting feature.
 
 ## Usage Instructions
 Visit my blog! https://twp-mvc-tech-blog-632648a365a8.herokuapp.com/
