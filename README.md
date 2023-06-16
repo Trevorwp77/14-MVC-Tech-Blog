@@ -11,15 +11,8 @@
   
 ## Description
 
-
-## Installation Instructions
-
-
 ## Usage Instructions
-
-
-### Video Walkthrough
-
+Visit my blog! https://twp-mvc-tech-blog-632648a365a8.herokuapp.com/
 
 ## License
 Permission to use this application is granted under the MIT license.
